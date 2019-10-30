@@ -4,9 +4,7 @@ def pandigital_check(x, y):
 
     concat = str(x) + str(y) + str(x * y)
 
-    if all(x in concat for x in numbers) and (len(concat) == 9):
-        return True
-    return False
+    return all(x in concat for x in numbers) and (len(concat) == 9)
 
 
 def yield_pandigital_products(limit):
