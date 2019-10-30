@@ -3,9 +3,7 @@ from decorators import timer_func
 
 
 def is_abundant(n):
-    if sum_divisors(n) > n:
-        return True
-    return False
+    return sum_divisors(n) > n
 
 
 @timer_func
